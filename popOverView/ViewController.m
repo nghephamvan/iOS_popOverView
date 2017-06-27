@@ -34,8 +34,7 @@
     UIPopoverPresentationController *popView = [vc popoverPresentationController];
     popView.permittedArrowDirections = UIPopoverArrowDirectionUp;
     popView.delegate = self;
-    
-    popView.sourceView = self.view;
     popView.sourceRect = CGRectMake(30, 30, 10, 10);
+    popView.sourceView = self.view;
 }
 @end
