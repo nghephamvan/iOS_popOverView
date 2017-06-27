@@ -24,4 +24,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)popoverWithoutBarButton:(id)sender {
+    NSLog(@"test popover");
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"Pop"];
+    vc.modalPresentationStyle = UIModalPresentationPopover;
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    UIPopoverPresentationController *popView = [vc popoverPresentationController];
+    popView.permittedArrowDirections = UIPopoverArrowDirectionUp;
+    popView.delegate = self;
+    
+    popView.sourceView = self.view;
+    popView.sourceRect = CGRectMake(30, 30, 10, 10);
+}
 @end

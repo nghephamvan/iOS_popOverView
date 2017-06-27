@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842633C31F0258B4008510A4 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842633C21F0258B4008510A4 /* PopViewController.m */; };
 		846E12D51EFBC17A00C3CD13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E12D41EFBC17A00C3CD13 /* main.m */; };
 		846E12D81EFBC17A00C3CD13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E12D71EFBC17A00C3CD13 /* AppDelegate.m */; };
 		846E12DB1EFBC17A00C3CD13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E12DA1EFBC17A00C3CD13 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		842633C11F0258B4008510A4 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		842633C21F0258B4008510A4 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		846E12D01EFBC17A00C3CD13 /* popOverView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popOverView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846E12D41EFBC17A00C3CD13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		846E12D61EFBC17A00C3CD13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				846E12D71EFBC17A00C3CD13 /* AppDelegate.m */,
 				846E12D91EFBC17A00C3CD13 /* ViewController.h */,
 				846E12DA1EFBC17A00C3CD13 /* ViewController.m */,
+				842633C11F0258B4008510A4 /* PopViewController.h */,
+				842633C21F0258B4008510A4 /* PopViewController.m */,
 				846E12DC1EFBC17A00C3CD13 /* Main.storyboard */,
 				846E12DF1EFBC17A00C3CD13 /* Assets.xcassets */,
 				846E12E11EFBC17A00C3CD13 /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842633C31F0258B4008510A4 /* PopViewController.m in Sources */,
 				846E12DB1EFBC17A00C3CD13 /* ViewController.m in Sources */,
 				846E12D81EFBC17A00C3CD13 /* AppDelegate.m in Sources */,
 				846E12D51EFBC17A00C3CD13 /* main.m in Sources */,
@@ -264,9 +270,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = popOverView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = recochoku.popOverView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -275,9 +283,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = popOverView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = recochoku.popOverView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -300,6 +310,7 @@
 				846E12E91EFBC17A00C3CD13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
